@@ -1,0 +1,13 @@
+{
+  "name": "brick-game-retro",
+  "version": "1.0.0",
+  "description": "Virtual Brick Game Handheld Console - Racing Game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Brick Game Retro Console - Virtual E-9999</title>
+    <link rel="stylesheet" href="style.css">
+<style>.paf-made-by{position:fixed;right:8px;bottom:8px;width:min(72px,12vw);max-width:12vw;height:auto;object-fit:contain;opacity:.5;background:transparent;padding:0;border:0;box-shadow:none;filter:none;pointer-events:none;z-index:30}</style></head>
+<body>
+    <div class="console-wrapper">
+        <div class="console-body">
+
+            <!-- LCD Display Area -->
+            <div class="lcd-bezel">
+                <div class="lcd-inner">
+                    <div class="lcd-top-row">
+                        <span class="lcd-super">SUPER</span>
+                    </div>
+                    <div class="lcd-content">
+                        <div class="deco-col deco-left" aria-hidden="true">
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                        </div>
+
+                        <div class="lcd-screen">
+                            <div class="lcd-status-row">
+                                <span id="lcd-title">MENU</span>
+                                <span class="status-icons">
+                                    <span id="icon-pause" class="off">II</span>
+                                    <span id="icon-sound">))</span>
+                                </span>
+                            </div>
+                            <div class="lcd-main-grid" id="lcd-grid"></div>
+                            <div class="lcd-score-row">
+                                <div class="stat"><b>SCORE</b><span id="score-val">000000</span></div>
+                                <div class="stat"><b>HI</b><span id="hi-score-val">000000</span></div>
+                                <div class="stat"><b>LV</b><span id="level-val">01</span></div>
+                                <div class="stat"><b>SP</b><span id="speed-val">01</span></div>
+                            </div>
+                        </div>
+
+                        <div class="deco-col deco-right" aria-hidden="true">
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                            <div class="deco-cluster"><span></span><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="waist-ridge"></div>
+
+            <!-- Small Controls -->
+            <div class="small-controls">
+                <div class="btn-col">
+                    <button class="btn-small" id="btn-onoff"></button>
+                    <span class="btn-label">ON/OFF</span>
+                </div>
+                <div class="btn-col">
+                    <button class="btn-small" id="btn-sp"></button>
+                    <span class="btn-label">S/P</span>
+                </div>
+                <div class="btn-col">
+                    <button class="btn-small" id="btn-sound"></button>
+                    <span class="btn-label">SOUND</span>
+                </div>
+                <div class="btn-col">
+                    <button class="btn-small" id="btn-reset"></button>
+                    <span class="btn-label">RESET</span>
+                </div>
+            </div>
+
+            <!-- Main Controls -->
+            <div class="main-controls">
+                <div class="d-pad">
+                    <button class="btn-dir btn-up" id="btn-up"></button>
+                    <button class="btn-dir btn-left" id="btn-left"></button>
+                    <div class="d-pad-center"></div>
+                    <button class="btn-dir btn-right" id="btn-right"></button>
+                    <button class="btn-dir btn-down" id="btn-down"></button>
+                    <span class="dpad-label label-left">LEFT</span>
+                    <span class="dpad-label label-right">RIGHT</span>
+                    <span class="dpad-label label-down">DOWN</span>
+                </div>
+                <div class="action-pad">
+                    <button class="btn-rotate" id="btn-rotate"></button>
+                    <span class="rotate-label">ROTATE</span>
+                </div>
+            </div>
+
+            <!-- Brand -->
+            <div class="brand-row">
+                <div class="brand-text">
+                    <span class="brand-line1">Brick</span>
+                    <span class="brand-line2">Game</span>
+                    <span class="brand-sub">9999 in 1</span>
+                </div>
+                <div class="brand-mascot" aria-hidden="true">
+                    <svg viewBox="0 0 60 60" width="46" height="46">
+                        <circle cx="30" cy="34" r="16" fill="none" stroke="#1c1a12" stroke-width="2"/>
+                        <circle cx="18" cy="18" r="7" fill="none" stroke="#1c1a12" stroke-width="2"/>
+                        <circle cx="42" cy="18" r="7" fill="none" stroke="#1c1a12" stroke-width="2"/>
+                        <circle cx="25" cy="32" r="2" fill="#1c1a12"/>
+                        <circle cx="35" cy="32" r="2" fill="#1c1a12"/>
+                        <path d="M27 40 Q30 43 33 40" fill="none" stroke="#1c1a12" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="model-row">
+                <span class="model-line"></span>
+                <span class="model-text">E-9999</span>
+                <span class="model-line"></span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+<img class="paf-made-by" src="/made-by.png" alt="Made with App Builder — Pi SoloHost"></body>
+</html>
